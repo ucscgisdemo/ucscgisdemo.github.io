@@ -49,6 +49,7 @@
 				</section>
 				
 				<section>Just some cool stuff with D3
+				<div id="container">test text</div>
 				<script>{
 				// Declare the chart dimensions and margins.
 				const width = 640;
@@ -84,7 +85,7 @@
 					.call(d3.axisLeft(y));
 
 				// Return the SVG element.
-				return svg.node();
+				container.append(svg.node());
 				}
 				</script>
 				</section>
